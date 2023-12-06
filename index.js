@@ -1,8 +1,8 @@
 
-let player = {
-    name: "Maya",
-    chips: 200
-}
+// let player = {
+//     name: "Maya",
+//     chips: 200
+// }
 
 let cards = [];
 let sum = 0;
