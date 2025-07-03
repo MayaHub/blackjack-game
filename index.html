@@ -8,12 +8,13 @@
     <div class="container">
         <h1>Blackjack</h1>
         <p id="message-el">Want to play a round?</p>
-        <p id="cards-el">Cards:</p>
-        <p id="sum-el">Sum:</p>
+        <p id="cards-el"></p>
+        <p id="sum-el"></p>
         <div class="buttons">
             <button id="start-btn" onclick="startGame()">START GAME</button>
-            <button onclick="newCard()">NEW CARD</button>
-            <p id="player-el"></p>
+            <button id="new-btn" onclick="newCard()" style="display: none;">NEW CARD</button>
+            <!-- <p id="player-el"></p> -->
+             <button id="restart-btn" onclick="restartGame()" style="display: none;">RESTART</button>
         </div>
 
     </div>
