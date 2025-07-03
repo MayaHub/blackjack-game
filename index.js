@@ -77,5 +77,7 @@ function newCard() {
   function restartGame() {
     cardsEl.textContent = "";
     sumEl.textContent = "";
-    startGame();
+    messageEl.textContent = "Press Start";
+    startBtnEl.style.display = "block";
+    restartBtnEl.style.display = "none"
   }
