@@ -18,8 +18,9 @@ let startBtnEl = document.getElementById("start-btn")
 let newBtnEl = document.getElementById("new-btn");
 let restartBtnEl = document.getElementById("restart-btn")
 // let playerEl = document.getElementById("player-el");
-
 // playerEl.textContent = player.name + ": $"+ player.chips;
+
+let boardEl = document.getElementById("board-el");
 
 function getRandomCard() {
   let randomCard = Math.floor(Math.random() * 13) + 1;
@@ -61,6 +62,7 @@ function renderGame() {
     isAlive = false;
     restartBtnEl.style.display = "block";
     newBtnEl.style.display = "none";
+    boardEl.style.backgroundColor = "red"; // turns board red at >21 bust
   }
   messageEl.textContent = message;
 }
@@ -80,4 +82,5 @@ function newCard() {
     messageEl.textContent = "Press Start";
     startBtnEl.style.display = "block";
     restartBtnEl.style.display = "none"
+    boardEl.style.backgroundColor = ""; // turns board back to green after >21 bust
   }
